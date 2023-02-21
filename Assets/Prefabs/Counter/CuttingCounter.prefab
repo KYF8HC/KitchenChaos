@@ -84,7 +84,7 @@ PrefabInstance:
     - target: {fileID: 1161194340010971560, guid: b9a92501f4140224e8cf0992b86cdb13,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 1161194340010971560, guid: b9a92501f4140224e8cf0992b86cdb13,
         type: 3}
@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 1161194340010971560, guid: b9a92501f4140224e8cf0992b86cdb13,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 1161194340010971560, guid: b9a92501f4140224e8cf0992b86cdb13,
         type: 3}
@@ -157,6 +157,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterTopPoint: {fileID: 4500787120280424428}
+  cuttingRecipeSOArray:
+  - {fileID: 11400000, guid: 43505f0ff8b87384085f599b2646141e, type: 2}
+  - {fileID: 11400000, guid: 5901ceb8815e3394a9b9e658367b6a02, type: 2}
+  - {fileID: 11400000, guid: e91521796148e2b4faf4abec474983a3, type: 2}
 --- !u!4 &660533566729557483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1161194340010971560, guid: b9a92501f4140224e8cf0992b86cdb13,
