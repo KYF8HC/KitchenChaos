@@ -7,13 +7,13 @@ using UnityEngine.InputSystem;
 public class GameInput : MonoBehaviour
 {
     public event EventHandler OnInteractAction;
-    private PlayerInputActions plalyerInputActions;
+    private PlayerInputActions playerInputActions;
     private void Awake()
     {
-        plalyerInputActions = new PlayerInputActions();
-        plalyerInputActions.Player.Enable();
+        playerInputActions = new PlayerInputActions();
+        playerInputActions.Player.Enable();
 
-        plalyerInputActions.Player.Interact.performed += Interact_performed;
+        playerInputActions.Player.Interact.performed += Interact_performed;
     }
 
     private void Interact_performed(InputAction.CallbackContext obj)
@@ -23,7 +23,7 @@ public class GameInput : MonoBehaviour
 
     public Vector2 GetMovementVectorNormalized()
     {
-        Vector2 inputVector = plalyerInputActions.Player.Move.ReadValue<Vector2>();
+        Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
         
         inputVector = inputVector.normalized;
         return inputVector;
