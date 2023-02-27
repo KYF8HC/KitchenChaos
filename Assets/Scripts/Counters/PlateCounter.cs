@@ -33,6 +33,7 @@ public class PlateCounter : BaseCounter
                 //Atleast 1 plate here
                 KitchenObject.SpawnKitchenObject(plateKitchenObjectSO, player);
                 OnPlateRemoved?.Invoke(this, EventArgs.Empty);
+                platesSpawnedAmount--;
             }
         }
     }
